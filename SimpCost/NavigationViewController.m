@@ -28,7 +28,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.0f green:128.0f/256.0f blue:1.0f alpha:1.0f]];
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"SumIsPositive"])
+    {
+        [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.0f green:128.0f/256.0f blue:1.0f alpha:1.0f]];
+    }
+    else
+    {
+        [[UINavigationBar appearance] setBarTintColor:[UIColor redColor]];
+    }
+    
     [[UINavigationBar appearance] setTitleTextAttributes:
      [NSDictionary dictionaryWithObjectsAndKeys:
       [UIColor whiteColor],NSForegroundColorAttributeName,

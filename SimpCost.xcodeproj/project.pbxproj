@@ -24,6 +24,8 @@
 		A42EA9B018137C19007EA14B /* SimpCostTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A42EA9AF18137C19007EA14B /* SimpCostTests.m */; };
 		A42EA9BE18139C55007EA14B /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42EA9BD18139C55007EA14B /* ListViewController.m */; };
 		A4904CF9185335D500A0333A /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4904CF8185335D500A0333A /* NavigationViewController.m */; };
+		A4904CFE1853467200A0333A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4904CFD1853467200A0333A /* MapKit.framework */; };
+		A4904D001853467900A0333A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4904CFF1853467900A0333A /* CoreLocation.framework */; };
 		A4DAEF6E1850E89E003FB7D7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4DAEF6D1850E89E003FB7D7 /* Default-568h@2x.png */; };
 		A4DAEF711850EF68003FB7D7 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DAEF701850EF68003FB7D7 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
@@ -63,6 +65,8 @@
 		A42EA9BD18139C55007EA14B /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		A4904CF7185335D500A0333A /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
 		A4904CF8185335D500A0333A /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		A4904CFD1853467200A0333A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A4904CFF1853467900A0333A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A4DAEF691850E83D003FB7D7 /* SimpCost_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SimpCost_120.png; path = SimpCost/SimpCost_120.png; sourceTree = "<group>"; };
 		A4DAEF6A1850E84D003FB7D7 /* SimpCost_76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SimpCost_76.png; path = SimpCost/SimpCost_76.png; sourceTree = "<group>"; };
 		A4DAEF6B1850E859003FB7D7 /* SimpCost_152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SimpCost_152.png; path = SimpCost/SimpCost_152.png; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4904D001853467900A0333A /* CoreLocation.framework in Frameworks */,
+				A4904CFE1853467200A0333A /* MapKit.framework in Frameworks */,
 				A42EA98418137C19007EA14B /* CoreGraphics.framework in Frameworks */,
 				A42EA98618137C19007EA14B /* UIKit.framework in Frameworks */,
 				A42EA98218137C19007EA14B /* Foundation.framework in Frameworks */,
@@ -123,6 +129,8 @@
 		A42EA98018137C19007EA14B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A4904CFF1853467900A0333A /* CoreLocation.framework */,
+				A4904CFD1853467200A0333A /* MapKit.framework */,
 				A42EA98118137C19007EA14B /* Foundation.framework */,
 				A42EA98318137C19007EA14B /* CoreGraphics.framework */,
 				A42EA98518137C19007EA14B /* UIKit.framework */,

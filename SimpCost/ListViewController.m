@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 
 #import "DetailViewController.h"
+#import "NavigationViewController.h"
 
 @interface ListViewController ()
 {
@@ -131,7 +132,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //[self presentViewController:[[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil] animated:YES completion:nil];
+    [[NSUserDefaults standardUserDefaults] setInteger:indexPath.row forKey:@"CurrentDetailID"];
+    
+    NavigationViewController *nav = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailNav"];
+    [self presentViewController:nav animated:YES completion:nil];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 

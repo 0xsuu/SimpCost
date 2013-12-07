@@ -9,6 +9,8 @@
 #import "ListViewController.h"
 #import "AppDelegate.h"
 
+#import "DetailViewController.h"
+
 @interface ListViewController ()
 {
     NSMutableArray *values;
@@ -104,6 +106,12 @@
     if (editingStyle == UITableViewCellEditingStyleDelete)
     {
         NSUInteger row = [indexPath row];
+        
+        [[NSUserDefaults standardUserDefaults] setFloat:([[NSUserDefaults standardUserDefaults] floatForKey:@"Sum"] - [[[values objectAtIndex:row] substringFromIndex:2] floatValue]) forKey:@"Sum"];
+        [[NSUserDefaults standardUserDefaults] setFloat:([[NSUserDefaults standardUserDefaults] floatForKey:@"Addition"] - [[[values objectAtIndex:row] substringFromIndex:2] floatValue]) forKey:@"Addition"];
+        [[NSUserDefaults standardUserDefaults] setFloat:([[NSUserDefaults standardUserDefaults] floatForKey:@"Subtraction"] - [[[values objectAtIndex:row] substringFromIndex:2] floatValue]) forKey:@"Subtraction"];
+        
+        
         [values removeObjectAtIndex:row];
         [dates removeObjectAtIndex:row];
         [notes removeObjectAtIndex:row];
@@ -123,6 +131,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    //[self presentViewController:[[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil] animated:YES completion:nil];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 

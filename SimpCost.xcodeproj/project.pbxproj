@@ -23,6 +23,9 @@
 		A42EA9AE18137C19007EA14B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A42EA9AC18137C19007EA14B /* InfoPlist.strings */; };
 		A42EA9B018137C19007EA14B /* SimpCostTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A42EA9AF18137C19007EA14B /* SimpCostTests.m */; };
 		A42EA9BE18139C55007EA14B /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42EA9BD18139C55007EA14B /* ListViewController.m */; };
+		A4904CF9185335D500A0333A /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4904CF8185335D500A0333A /* NavigationViewController.m */; };
+		A4DAEF6E1850E89E003FB7D7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4DAEF6D1850E89E003FB7D7 /* Default-568h@2x.png */; };
+		A4DAEF711850EF68003FB7D7 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DAEF701850EF68003FB7D7 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,15 @@
 		A42EA9AF18137C19007EA14B /* SimpCostTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpCostTests.m; sourceTree = "<group>"; };
 		A42EA9BC18139C55007EA14B /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		A42EA9BD18139C55007EA14B /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		A4904CF7185335D500A0333A /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		A4904CF8185335D500A0333A /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		A4DAEF691850E83D003FB7D7 /* SimpCost_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SimpCost_120.png; path = SimpCost/SimpCost_120.png; sourceTree = "<group>"; };
+		A4DAEF6A1850E84D003FB7D7 /* SimpCost_76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SimpCost_76.png; path = SimpCost/SimpCost_76.png; sourceTree = "<group>"; };
+		A4DAEF6B1850E859003FB7D7 /* SimpCost_152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SimpCost_152.png; path = SimpCost/SimpCost_152.png; sourceTree = "<group>"; };
+		A4DAEF6C1850E861003FB7D7 /* SimpCost_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SimpCost_80.png; path = SimpCost/SimpCost_80.png; sourceTree = "<group>"; };
+		A4DAEF6D1850E89E003FB7D7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A4DAEF6F1850EF68003FB7D7 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		A4DAEF701850EF68003FB7D7 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +99,11 @@
 		A42EA97518137C19007EA14B = {
 			isa = PBXGroup;
 			children = (
+				A4DAEF6D1850E89E003FB7D7 /* Default-568h@2x.png */,
+				A4DAEF6C1850E861003FB7D7 /* SimpCost_80.png */,
+				A4DAEF6B1850E859003FB7D7 /* SimpCost_152.png */,
+				A4DAEF6A1850E84D003FB7D7 /* SimpCost_76.png */,
+				A4DAEF691850E83D003FB7D7 /* SimpCost_120.png */,
 				A42EA98718137C19007EA14B /* SimpCost */,
 				A42EA9A918137C19007EA14B /* SimpCostTests */,
 				A42EA98018137C19007EA14B /* Frameworks */,
@@ -121,10 +138,14 @@
 				A42EA99118137C19007EA14B /* AppDelegate.m */,
 				A42EA99318137C19007EA14B /* Main_iPhone.storyboard */,
 				A42EA99618137C19007EA14B /* Main_iPad.storyboard */,
+				A4904CF7185335D500A0333A /* NavigationViewController.h */,
+				A4904CF8185335D500A0333A /* NavigationViewController.m */,
 				A42EA99918137C19007EA14B /* ViewController.h */,
 				A42EA99A18137C19007EA14B /* ViewController.m */,
 				A42EA9BC18139C55007EA14B /* ListViewController.h */,
 				A42EA9BD18139C55007EA14B /* ListViewController.m */,
+				A4DAEF6F1850EF68003FB7D7 /* DetailViewController.h */,
+				A4DAEF701850EF68003FB7D7 /* DetailViewController.m */,
 				A42EA99C18137C19007EA14B /* Images.xcassets */,
 				A42EA98818137C19007EA14B /* Supporting Files */,
 			);
@@ -239,6 +260,7 @@
 				A42EA99818137C19007EA14B /* Main_iPad.storyboard in Resources */,
 				A42EA99D18137C19007EA14B /* Images.xcassets in Resources */,
 				A42EA99518137C19007EA14B /* Main_iPhone.storyboard in Resources */,
+				A4DAEF6E1850E89E003FB7D7 /* Default-568h@2x.png in Resources */,
 				A42EA98C18137C19007EA14B /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,7 +280,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4DAEF711850EF68003FB7D7 /* DetailViewController.m in Sources */,
 				A42EA99B18137C19007EA14B /* ViewController.m in Sources */,
+				A4904CF9185335D500A0333A /* NavigationViewController.m in Sources */,
 				A42EA99218137C19007EA14B /* AppDelegate.m in Sources */,
 				A42EA9BE18139C55007EA14B /* ListViewController.m in Sources */,
 				A42EA98E18137C19007EA14B /* main.m in Sources */,
@@ -353,7 +377,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -388,7 +412,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -398,8 +422,6 @@
 		A42EA9B418137C19007EA14B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpCost/SimpCost-Prefix.pch";
 				INFOPLIST_FILE = "SimpCost/SimpCost-Info.plist";
@@ -411,8 +433,6 @@
 		A42EA9B518137C19007EA14B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpCost/SimpCost-Prefix.pch";
 				INFOPLIST_FILE = "SimpCost/SimpCost-Info.plist";

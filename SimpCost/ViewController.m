@@ -144,9 +144,9 @@
     self.subtraction.text = @"¥0.0";
 }
 
-- (IBAction)goToValue:(id)sender
+- (IBAction)goToNote:(id)sender
 {
-    [self.value becomeFirstResponder];
+    [self.note becomeFirstResponder];
 }
 
 - (IBAction)dismissKeyboard:(id)sender
@@ -164,6 +164,16 @@
 
 - (void)calculateAndSave
 {
+    if ([self.value.text isEqualToString:@""] || [self.value.text floatValue] == 0.0f)
+    {//Check if it is empty
+        return;
+    }
+    
+    if ([[self.value.text substringToIndex:1] isEqualToString:@"-"] || [[self.value.text substringToIndex:1] isEqualToString:@"+"])
+    {//Check if it has + or -
+        return;
+    }
+    
     switch (status)
     {
         case ADD:
@@ -219,7 +229,7 @@
 - (void)setValueTextFieldStatus:(float)alphaValue
 {
     if (alphaValue == 1.0)
-        [self.note becomeFirstResponder];
+        [self.value becomeFirstResponder];
     
     [UIView animateWithDuration:0.3f animations:^
     {

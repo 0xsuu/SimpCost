@@ -160,6 +160,7 @@
 {
     [self.note resignFirstResponder];
     [self.value resignFirstResponder];
+    [self setValueTextFieldStatus:HIDE];
 }
 
 - (void)calculateAndSave
@@ -224,6 +225,24 @@
     
     self.value.text = @"";
     self.note.text = @"";
+    
+    if ([[[self.sum.text substringToIndex:2] substringFromIndex:1] isEqualToString:@"-"])
+    {
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"SumIsPositive"];
+    }
+    else
+    {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"SumIsPositive"];
+    }
+    
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"SumIsPositive"])
+    {
+        [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.0f green:128.0f/256.0f blue:1.0f alpha:1.0f]];
+    }
+    else
+    {
+        [[UINavigationBar appearance] setBarTintColor:[UIColor redColor]];
+    }
 }
 
 - (void)setValueTextFieldStatus:(float)alphaValue
@@ -231,7 +250,7 @@
     if (alphaValue == 1.0)
         [self.value becomeFirstResponder];
     
-    [UIView animateWithDuration:0.3f animations:^
+    [UIView animateWithDuration:0.2f animations:^
     {
         UIView *tempView;
     
@@ -244,7 +263,7 @@
        }
     }];
     
-    [UIView animateWithDuration:0.3f animations:^
+    [UIView animateWithDuration:0.2f animations:^
     {
         self.value.alpha = alphaValue;
         self.note.alpha = alphaValue;
